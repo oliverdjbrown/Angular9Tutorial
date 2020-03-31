@@ -1,0 +1,15 @@
+<p>
+    Definicion: La interpolación de cadenas, también conocida en inglés como "string interpolation", o simplemente como interpolación, es un mecanismo de Angular de sustitución de una expresión por un valor de cadena en un template.
+
+Cuando Angular ve en un template algo escrito entre dobles llaves lo evalúa y lo trata de convertir en una cadena, para luego volcarlo en el template.
+
+1) creare un componente llamado "interpolation".
+2) Declarare una variable publica llamada "mensaje" en "interpolation.component.ts".
+3) dentro de mi vista "interpolation.component.html" colocare la variable entre la doble llave para que se muestre el mensaje.
+4) probare propiedades para concatenar strings con mi interpolacion, mostrar en mayuscula, llamar funciones, mostrar caracteres en mayuscula.
+</p>
+
+<h1>{{mensaje}}</h1>
+<h2>{{'Total de Caracteres en la variable: ' + mensaje.length}}</h2>
+<h3>{{'Mostrar la variable en mayuscula: ' + mensaje.toUpperCase()}}</h3>
+<h4>{{mostrarMensaje()}}</h4>

@@ -4,6 +4,23 @@ Este es un proyecto de Angular 9 construido unicamente para probar las caracteri
 
 ## Hello World
 1) Eliminare la documentacion de "app.component.html"
-2) Para esta prueba creare un componente utilizando Angular CLI (ng g c "1-Hello-world") el cual genera un componente.
+2) Para esta prueba creare un componente utilizando Angular CLI (ng g c "hello-world") el cual genera un componente.
 3) Modificare el archivo "hello-world.component.html" y "hello-world.component.ts" para mostrar el mensaje Hola mundo de forma directa y utilizand la interpolacion.  
-4) Por ultimo agregare al "app.component.html" el nombre del componente "hello-world" 
+4) Creare un componente "tool-bar" que contrendra un navbar para desplazarnos dentro de las practicas de este proyecto.
+
+## Components
+Definicion: Los componentes en angular son como pequeñas partes de nuestra aplicacion, el componente sera un bloque que contiene un template compuesto por (Vista(HTML), Logica(TS) y Estilos(Css)), estos componentes se declaran y luego pueden ser llamados para utilizarse. 
+
+1) Creare 1 componente llamado "components" que fungira como el padre.
+2) Luego creare 3 componenetes (componente1, componente2, componente3) que seran hijos del componente padre
+3) Los componentes hijos se mostraran dentro del padre. 
+
+## Interpolacion
+Definicion: La interpolación de cadenas, también conocida en inglés como "string interpolation", o simplemente como interpolación, es un mecanismo de Angular de sustitución de una expresión por un valor de cadena en un template.
+
+Cuando Angular ve en un template algo escrito entre dobles llaves {{}} lo evalúa y lo trata de convertir en una cadena, para luego volcarlo en el template.
+
+1) creare un componente llamado "interpolation".
+2) Declarare una variable publica llamada "mensaje" en "interpolation.component.ts".
+3) dentro de mi vista "interpolation.component.html" colocare la variable entre la doble llave para que se muestre el mensaje.
+4) probare propiedades para concatenar strings con mi interpolacion, mostrar en mayuscula, llamar funciones, mostrar caracteres en mayuscula.
