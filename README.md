@@ -1,27 +1,9 @@
 # AngularTutorial9
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.6.
+Este es un proyecto de Angular 9 construido unicamente para probar las caracteristicas que destacan este framework
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Hello World
+1) Eliminare la documentacion de "app.component.html"
+2) Para esta prueba creare un componente utilizando Angular CLI (ng g c "1-Hello-world") el cual genera un componente.
+3) Modificare el archivo "hello-world.component.html" y "hello-world.component.ts" para mostrar el mensaje Hola mundo de forma directa y utilizand la interpolacion.  
+4) Por ultimo agregare al "app.component.html" el nombre del componente "hello-world" 
