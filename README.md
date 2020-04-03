@@ -49,4 +49,17 @@ Al igual que property binding esta es una practica para atar valores o atributos
 
 1) creamos un titulo en el documento HTML y de forma directa le establecemos un estilo (hardcode).
 2) creamos un titulo en el documento HTML y establecemos que el estilo se aplique por medio de una condicion dependiendo del estado de una vaiable boleana.
-3) creamos un titulo y por medio de ngStyle atamos nuestro objeto con los atributos establecidos
+3) creamos un titulo y por medio de ngStyle atamos nuestro objeto con los atributos establecidos.
+
+## Event Binding
+
+Este ayudará a crear aplicaciones web interactivas con el flujo de datos del componente al elemento y del elemento al componente, ambos extremos.
+
+para esta practica creamos los siguientes botones.
+
+1) crear boton que llame el evento y muestre mensaje en la ventana.
+2) crear boton que llame el evento y muestre mensaje en la consola.
+3) crear boton que llame un evento y asigne el valor a una vaiable que se mostrara con la interpolacion.
+4) crear boton que llame un evento y muestre info del evento por consola.
+5) crear boton que llame un evento y muestre e tipo de evento.
+6) crear un boton que directamente asigne el valor a una variable que se mostrara con la interpolacion.

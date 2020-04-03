@@ -1,0 +1,18 @@
+
+
+<h1>Has clic en los botones</h1>
+
+<button (click)="eventoVentana()">Mostrar mensaje en ventana</button>
+<br>
+<button (click)="eventoConsola()">Mostrar mensaje en consola</button>
+<br>
+<button (click)="mostrarMensaje()">Mostrar string usando interpolacion</button>
+{{saludos}}
+<br>
+<button (click)="mostrarInfoEvento($event)">mostrar Info Evento en consola</button>
+<br>
+<button (click)="mostrarTipoEvento()">mostrar info tipo de evento</button>
+{{tipoEvento}}
+<br>
+<button (click)="valorTemplate='Bienvenido'">Asignar valor a variable desde el template</button>
+{{valorTemplate}}
