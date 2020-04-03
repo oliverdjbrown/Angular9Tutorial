@@ -1,3 +1,4 @@
+import { NgswitchDirectiveComponent } from './ngswitch-directive/ngswitch-directive.component';
 import { NgifDirectiveComponent } from './ngif-directive/ngif-directive.component';
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
 import { TemplateReferenceVariablesComponent } from './template-reference-variables/template-reference-variables.component';
@@ -22,7 +23,8 @@ const routes: Routes = [
   { path: 'event-binding', component: EventBindingComponent},
   { path: 'template-reference-variables', component: TemplateReferenceVariablesComponent},
   { path: 'two-way-binding', component: TwoWayBindingComponent},
-  { path: 'ngif-directive', component: NgifDirectiveComponent}
+  { path: 'ngif-directive', component: NgifDirectiveComponent},
+  { path: 'ngswitch-directive', component: NgswitchDirectiveComponent}
 ];
 
 @NgModule({

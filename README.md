@@ -84,11 +84,19 @@ El two-way data binding en Angular nos permite modificar el valor de una propied
 
 ## ngIf Directive
 
-Las directiva *ngIf es un atributo que podemos agregarle a los elementos HTML que nos permiten en el caso del *ngIf condicionar si elementos deben agregarse o eliminarse de la página HTML.
+ngIf: Permite mostrar / ocultar elementos del DOM en la vista.
 
 1) crear un titulo h1 con directiva ngIf el cual se mostrara si la variable estado es igual a true, de lo contrario no se mostrara.
 2) declarar variable boleana "estado".
 3) crear boton que llama funcion para cambiar el estado de variable de verdadero a falso y viceversa.
 4) crear un titulo h1 con directiva ngIf el cual se mostrara si la variable "estado" es igual a true, de lo contrario mostrara un bloque de codigo que fue referenciado.
 5) crear un titulo h1 con directiva ngIf que mostrara entre un bloque de codigo u otro dependiendo del estado de la variable "estado".
+
+## ngSwitch
+
+ngSwitch: Permite ejecutar casos condicionales sobre elementos del DOM.
+
+1) Establecer la variable "color".
+2) establecer un div con la directiva ngSwitch estableciendo 3 casos de seleccion.
+3) establecer un caso por defecto en caso de que no se seleccione uno de los 3 casos.
 

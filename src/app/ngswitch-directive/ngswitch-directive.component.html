@@ -1,0 +1,8 @@
+<h1>Establece un color en el Ts para ver que condicion se aplica</h1>
+
+<div [ngSwitch]="color">
+<div *ngSwitchCase="'red'">Seleccionaste el color rojo</div>
+<div *ngSwitchCase="'blue'">Seleccionaste el color azul</div>
+<div *ngSwitchCase="'green'">Seleccionaste el color verde</div>
+<div *ngSwitchDefault>No ha seleccionado un color valido</div>
+</div>
