@@ -35,3 +35,11 @@ cuando realizamos la union de propiedad de un valor estamos haciendo la union co
 4) crearemos una variable llamada "buttonName" = habilitado.
 5) crearemos un boton en la vista HTML y usando la interpolacion le pasamos el nombre dinamico a nuestro boton.
 6) creamos un metodo el cual valide la variable boleana "estado" y  la cambie de true a false y vice versa para habilitar o deshabilitar nuestro input dinaicamente.
+
+## Class Binding
+Al igual que property binding esta es una tecnica para unir valores a propiedades y aplicar estilos a los elementos HTML
+
+1) primero crearemos en la hoja de estilos unas clases para aplicar los siguientes estilos, color verde, rojo y cursiva.
+2) luego declararemos la variable "formato" en el TS y sera igual al atributo que deseamos aplicarle a nuestro elemento.
+3) declaramos la variable, "error", "especial" y "claseMensaje" para utilizar sus atributos con ngClass. 
+4) por ultimo declaramos la propiedad ngClass y le especificamos la clase mensaje para que se aplique la condicion basado en los estados de las variables.

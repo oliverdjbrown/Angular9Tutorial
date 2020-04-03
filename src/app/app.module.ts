@@ -11,6 +11,7 @@ import { Componente2Component } from './components/componente2/componente2.compo
 import { Componente3Component } from './components/componente3/componente3.component';
 import { InterpolationComponent } from './interpolation/interpolation.component';
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
+import { ClassBindingComponent } from './class-binding/class-binding.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { PropertyBindingComponent } from './property-binding/property-binding.co
     Componente2Component,
     Componente3Component,
     InterpolationComponent,
-    PropertyBindingComponent
+    PropertyBindingComponent,
+    ClassBindingComponent
   ],
   imports: [
     BrowserModule,

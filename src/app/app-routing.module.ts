@@ -1,3 +1,4 @@
+import { ClassBindingComponent } from './class-binding/class-binding.component';
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
 import { ComponentsComponent } from './components/components.component';
 import { HelloWorldComponent } from './hello-world/hello-world.component';
@@ -10,7 +11,8 @@ const routes: Routes = [
   { path: 'hello-world', component: HelloWorldComponent },
   { path: 'components', component: ComponentsComponent},
   { path: 'interpolation', component: InterpolationComponent},
-  { path: 'property-binding', component: PropertyBindingComponent}
+  { path: 'property-binding', component: PropertyBindingComponent},
+  { path: 'class-binding', component: ClassBindingComponent}
 ];
 
 @NgModule({
