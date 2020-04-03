@@ -1,0 +1,39 @@
+ngFor: Permite ejecutar bucles sobre elementos del DOM.
+
+1) crear directiva ngFor que despliegue una lista de objetos.
+2) crear directiva ngFor que despliegue una lista de objetos + indice.
+3) crear directiva ngFor que despliegue una lista de objetos + validar si es el primero.
+4) crear directiva ngFor que despliegue una lista de objetos + validar si es el ultimo.
+5) crear directiva ngFor que despliegue una lista de objetos + alternar.
+
+<br>
+
+<h1>Despliegue del Objeto Colores</h1>
+
+<div *ngFor="let color of colores">
+<h2>{{color}}</h2>
+</div>
+
+<h2>Objetos con indice</h2>
+
+<div *ngFor="let color of colores; index as i">
+    <h3>{{i}} {{color}}</h3>
+ </div>
+    
+ <h2>El primer Objeto</h2>
+
+<div *ngFor="let color of colores; first as f">
+    <h3>{{f}} {{color}}</h3>
+ </div>
+
+ <h2>El ultimo Objeto</h2>
+
+ <div *ngFor="let color of colores; last as l">
+    <h3>{{l}} {{color}}</h3>
+ </div>
+
+ <h2>Alternado</h2>
+
+ <div *ngFor="let color of colores; even as e">
+    <h3>{{e}} {{color}}</h3>
+ </div>

@@ -1,3 +1,4 @@
+import { NgforDirectiveComponent } from './ngfor-directive/ngfor-directive.component';
 import { NgswitchDirectiveComponent } from './ngswitch-directive/ngswitch-directive.component';
 import { NgifDirectiveComponent } from './ngif-directive/ngif-directive.component';
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
@@ -15,16 +16,17 @@ import { InterpolationComponent } from './interpolation/interpolation.component'
 // Constante en donde se declaran las rutas para luego ser utilizadas
 const routes: Routes = [
   { path: 'hello-world', component: HelloWorldComponent },
-  { path: 'components', component: ComponentsComponent},
-  { path: 'interpolation', component: InterpolationComponent},
-  { path: 'property-binding', component: PropertyBindingComponent},
-  { path: 'class-binding', component: ClassBindingComponent},
-  { path: 'style-binding', component: StyleBindingComponent},
-  { path: 'event-binding', component: EventBindingComponent},
-  { path: 'template-reference-variables', component: TemplateReferenceVariablesComponent},
-  { path: 'two-way-binding', component: TwoWayBindingComponent},
-  { path: 'ngif-directive', component: NgifDirectiveComponent},
-  { path: 'ngswitch-directive', component: NgswitchDirectiveComponent}
+  { path: 'components', component: ComponentsComponent },
+  { path: 'interpolation', component: InterpolationComponent },
+  { path: 'property-binding', component: PropertyBindingComponent },
+  { path: 'class-binding', component: ClassBindingComponent },
+  { path: 'style-binding', component: StyleBindingComponent },
+  { path: 'event-binding', component: EventBindingComponent },
+  { path: 'template-reference-variables', component: TemplateReferenceVariablesComponent },
+  { path: 'two-way-binding', component: TwoWayBindingComponent },
+  { path: 'ngif-directive', component: NgifDirectiveComponent },
+  { path: 'ngswitch-directive', component: NgswitchDirectiveComponent },
+  { path: 'ngfor-directive', component: NgforDirectiveComponent }
 ];
 
 @NgModule({

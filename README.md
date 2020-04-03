@@ -100,3 +100,11 @@ ngSwitch: Permite ejecutar casos condicionales sobre elementos del DOM.
 2) establecer un div con la directiva ngSwitch estableciendo 3 casos de seleccion.
 3) establecer un caso por defecto en caso de que no se seleccione uno de los 3 casos.
 
+## ngFor
+ngFor: Permite ejecutar bucles sobre elementos del DOM.
+
+1) crear directiva ngFor que despliegue una lista de objetos.
+2) crear directiva ngFor que despliegue una lista de objetos + indice.
+3) crear directiva ngFor que despliegue una lista de objetos + validar si es el primero.
+4) crear directiva ngFor que despliegue una lista de objetos + validar si es el ultimo.
+5) crear directiva ngFor que despliegue una lista de objetos + alternar.
