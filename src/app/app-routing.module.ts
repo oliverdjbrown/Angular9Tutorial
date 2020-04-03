@@ -1,3 +1,4 @@
+import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
 import { TemplateReferenceVariablesComponent } from './template-reference-variables/template-reference-variables.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { StyleBindingComponent } from './style-binding/style-binding.component';
@@ -18,7 +19,8 @@ const routes: Routes = [
   { path: 'class-binding', component: ClassBindingComponent},
   { path: 'style-binding', component: StyleBindingComponent},
   { path: 'event-binding', component: EventBindingComponent},
-  { path: 'template-reference-variables', component: TemplateReferenceVariablesComponent}
+  { path: 'template-reference-variables', component: TemplateReferenceVariablesComponent},
+  { path: 'two-way-binding', component: TwoWayBindingComponent}
 ];
 
 @NgModule({

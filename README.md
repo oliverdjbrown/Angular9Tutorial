@@ -71,3 +71,16 @@ Una variable de referencia de plantilla suele ser una referencia a un elemento D
 1) crear un element input y asignarle un #.
 2) crear un boton con el evento click llamando un metodo que muestra un valor por consola.
 3) pasar el # asignado al input como parametro para que lo reciba nuestro metodo.
+
+## Two Way Binding
+
+El two-way data binding en Angular nos permite modificar el valor de una propiedad de forma bidireccional, de forma que cuando nosotros modificamos el valor de una propiedad en la vista el valor también se actualiza en el modelo de datos. Resumiendo cambiamos el valor de una propiedad con una caja de texto en la vista, ese valor se cambia en la vista y también en el componente.
+
+1) crearemos un imput en el template al cual le vamos a añadir la directiva ngModel que sea igual a la variable "nombre".
+2) en nuestro TS declararemos la variable "nombre" y la dejaremos en blanco.
+3) usando la interpolacion en el template renderizaremos la variable "nombre".
+4) en "app.module.ts" vamos a agregar al import "FormsModule" para que angular reconozca la directiva ngModel.
+5) en "app.module.ts" importaremos "import { FormsModule } from '@angular/forms';".
+
+## ngIf Directive
+
