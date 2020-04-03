@@ -1,3 +1,4 @@
+import { TemplateReferenceVariablesComponent } from './template-reference-variables/template-reference-variables.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { StyleBindingComponent } from './style-binding/style-binding.component';
 import { ClassBindingComponent } from './class-binding/class-binding.component';
@@ -16,7 +17,8 @@ const routes: Routes = [
   { path: 'property-binding', component: PropertyBindingComponent},
   { path: 'class-binding', component: ClassBindingComponent},
   { path: 'style-binding', component: StyleBindingComponent},
-  { path: 'event-binding', component: EventBindingComponent}
+  { path: 'event-binding', component: EventBindingComponent},
+  { path: 'template-reference-variables', component: TemplateReferenceVariablesComponent}
 ];
 
 @NgModule({

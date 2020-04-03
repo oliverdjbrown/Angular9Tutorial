@@ -1,0 +1,11 @@
+
+Una variable de referencia de plantilla suele ser una referencia a un elemento DOM dentro de una plantilla. También puede ser una referencia a un componente o directiva angular o un componente web. Eso significa que puede acceder fácilmente a la variable en cualquier lugar de la plantilla.
+
+1) crear un element input y asignarle un #.
+2) crear un boton con el evento click llamando un metodo que muestra un valor por consola.
+3) pasar el # asignado al input como parametro para que lo reciba nuestro metodo.
+
+<h1>Ingrese un texto</h1>
+<br>
+<input #myInput type="text">
+<button (click)="logMessage(myInput.value)">Log</button>

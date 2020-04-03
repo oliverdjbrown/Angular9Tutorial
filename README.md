@@ -63,3 +63,11 @@ para esta practica creamos los siguientes botones.
 4) crear boton que llame un evento y muestre info del evento por consola.
 5) crear boton que llame un evento y muestre e tipo de evento.
 6) crear un boton que directamente asigne el valor a una variable que se mostrara con la interpolacion.
+
+## Template Reference Vaiables
+
+Una variable de referencia de plantilla suele ser una referencia a un elemento DOM dentro de una plantilla. También puede ser una referencia a un componente o directiva angular o un componente web. Eso significa que puede acceder fácilmente a la variable en cualquier lugar de la plantilla.
+
+1) crear un element input y asignarle un #.
+2) crear un boton con el evento click llamando un metodo que muestra un valor por consola.
+3) pasar el # asignado al input como parametro para que lo reciba nuestro metodo.
