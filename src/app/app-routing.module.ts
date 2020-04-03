@@ -1,3 +1,4 @@
+import { NgifDirectiveComponent } from './ngif-directive/ngif-directive.component';
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
 import { TemplateReferenceVariablesComponent } from './template-reference-variables/template-reference-variables.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
@@ -20,7 +21,8 @@ const routes: Routes = [
   { path: 'style-binding', component: StyleBindingComponent},
   { path: 'event-binding', component: EventBindingComponent},
   { path: 'template-reference-variables', component: TemplateReferenceVariablesComponent},
-  { path: 'two-way-binding', component: TwoWayBindingComponent}
+  { path: 'two-way-binding', component: TwoWayBindingComponent},
+  { path: 'ngif-directive', component: NgifDirectiveComponent}
 ];
 
 @NgModule({

@@ -1,0 +1,44 @@
+Las directiva *ngIf es un atributo que podemos agregarle a los elementos HTML que nos permiten en el caso del *ngIf condicionar si elementos deben agregarse o eliminarse de la página HTML.
+
+1) crear un titulo h1 con directiva ngIf el cual se mostrara si la variable estado es igual a true, de lo contrario no se mostrara.
+2) declarar variable boleana "estado".
+3) crear boton que llama funcion para cambiar el estado de variable de verdadero a falso y viceversa.
+4) crear un titulo h1 con directiva ngIf el cual se mostrara si la variable "estado" es igual a true, de lo contrario mostrara un bloque de codigo que fue referenciado.
+5) crear un titulo h1 con directiva ngIf que mostrara entre un bloque de codigo u otro dependiendo del estado de la variable "estado".
+
+<br>
+
+<h1 *ngIf="estado">
+    Hola como estas?
+    </h1>
+
+    <h1 *ngIf="estado; else elseBlock">
+        si hola como estas esta oculto mostrare el segundo hola como estas
+    </h1>
+
+    
+    <ng-template #elseBlock>
+        <h2>
+            segundo Hola como estas?
+        </h2>
+    </ng-template>
+
+
+
+<div *ngIf="estado; then blockOne; else blockTwo"></div>
+
+<ng-template #blockOne>
+    <h2>
+        Bloque de codigo 1
+    </h2>
+</ng-template>
+
+<ng-template #blockTwo>
+    <h2>
+        Bloque de codigo 2
+    </h2>
+</ng-template>
+
+
+<br>
+<button (click)="estadoMenaje()">Mostar / Ocultar titulo</button>
