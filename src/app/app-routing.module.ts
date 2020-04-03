@@ -1,3 +1,4 @@
+import { StyleBindingComponent } from './style-binding/style-binding.component';
 import { ClassBindingComponent } from './class-binding/class-binding.component';
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
 import { ComponentsComponent } from './components/components.component';
@@ -12,7 +13,8 @@ const routes: Routes = [
   { path: 'components', component: ComponentsComponent},
   { path: 'interpolation', component: InterpolationComponent},
   { path: 'property-binding', component: PropertyBindingComponent},
-  { path: 'class-binding', component: ClassBindingComponent}
+  { path: 'class-binding', component: ClassBindingComponent},
+  { path: 'style-binding', component: StyleBindingComponent}
 ];
 
 @NgModule({

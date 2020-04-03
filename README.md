@@ -1,6 +1,6 @@
 # AngularTutorial9
 
-Este es un proyecto de Angular 9 construido unicamente para probar las caracteristicas que destacan este framework
+Este es un proyecto de Angular 9 construido unicamente para probar las caracteristicas que destacan este framework y tener un recordatorio a mano de todo lo que se puede hacer con el.
 
 ## Hello World
 1) Eliminare la documentacion de "app.component.html"
@@ -26,7 +26,7 @@ Cuando Angular ve en un template algo escrito entre dobles llaves {{}} lo evalú
 4) probare propiedades para concatenar strings con mi interpolacion, mostrar en mayuscula, llamar funciones, mostrar caracteres en mayuscula.
 
 ## Property Binding
-Property Binding es una tecnica con la cual puedes unir valores a propiedades de los elementos de un HTML
+Property Binding es una practica con la cual puedes atar valores o atributos  a propiedades de los elementos de un HTML
 cuando realizamos la union de propiedad de un valor estamos haciendo la union con el DOM (Document Objetc Model) y podemos hacer que las propiedades en vez de ser hardcode puedan ser dinamicas.
 
 1) crearemos la variable publica estado (boleano) y la iniciaremos en false.
@@ -37,9 +37,16 @@ cuando realizamos la union de propiedad de un valor estamos haciendo la union co
 6) creamos un metodo el cual valide la variable boleana "estado" y  la cambie de true a false y vice versa para habilitar o deshabilitar nuestro input dinaicamente.
 
 ## Class Binding
-Al igual que property binding esta es una tecnica para unir valores a propiedades y aplicar estilos a los elementos HTML
+Al igual que property binding esta es una practica para atar valores o atributos a propiedades y aplicar estilos a los elementos HTML
 
 1) primero crearemos en la hoja de estilos unas clases para aplicar los siguientes estilos, color verde, rojo y cursiva.
 2) luego declararemos la variable "formato" en el TS y sera igual al atributo que deseamos aplicarle a nuestro elemento.
 3) declaramos la variable, "error", "especial" y "claseMensaje" para utilizar sus atributos con ngClass. 
 4) por ultimo declaramos la propiedad ngClass y le especificamos la clase mensaje para que se aplique la condicion basado en los estados de las variables.
+
+## Style Binding
+Al igual que property binding esta es una practica para atar valores o atributos a propiedades y aplicar estilos a los elementos HTML.
+
+1) creamos un titulo en el documento HTML y de forma directa le establecemos un estilo (hardcode).
+2) creamos un titulo en el documento HTML y establecemos que el estilo se aplique por medio de una condicion dependiendo del estado de una vaiable boleana.
+3) creamos un titulo y por medio de ngStyle atamos nuestro objeto con los atributos establecidos
