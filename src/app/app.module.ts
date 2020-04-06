@@ -20,6 +20,8 @@ import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.compon
 import { NgifDirectiveComponent } from './ngif-directive/ngif-directive.component';
 import { NgswitchDirectiveComponent } from './ngswitch-directive/ngswitch-directive.component';
 import { NgforDirectiveComponent } from './ngfor-directive/ngfor-directive.component';
+import { ComponentInteractionComponent } from './component-interaction/component-interaction.component';
+import { ChildComponentComponent } from './component-interaction/child-component/child-component.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +41,9 @@ import { NgforDirectiveComponent } from './ngfor-directive/ngfor-directive.compo
     TwoWayBindingComponent,
     NgifDirectiveComponent,
     NgswitchDirectiveComponent,
-    NgforDirectiveComponent
+    NgforDirectiveComponent,
+    ComponentInteractionComponent,
+    ChildComponentComponent
   ],
   imports: [
     BrowserModule,

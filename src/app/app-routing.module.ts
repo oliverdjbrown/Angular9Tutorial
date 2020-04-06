@@ -1,3 +1,5 @@
+import { ChildComponentComponent } from './component-interaction/child-component/child-component.component';
+import { ComponentInteractionComponent } from './component-interaction/component-interaction.component';
 import { NgforDirectiveComponent } from './ngfor-directive/ngfor-directive.component';
 import { NgswitchDirectiveComponent } from './ngswitch-directive/ngswitch-directive.component';
 import { NgifDirectiveComponent } from './ngif-directive/ngif-directive.component';
@@ -26,7 +28,9 @@ const routes: Routes = [
   { path: 'two-way-binding', component: TwoWayBindingComponent },
   { path: 'ngif-directive', component: NgifDirectiveComponent },
   { path: 'ngswitch-directive', component: NgswitchDirectiveComponent },
-  { path: 'ngfor-directive', component: NgforDirectiveComponent }
+  { path: 'ngfor-directive', component: NgforDirectiveComponent },
+  { path: 'component-interaction', component: ComponentInteractionComponent },
+  { path: 'child-component', component: ChildComponentComponent}
 ];
 
 @NgModule({
