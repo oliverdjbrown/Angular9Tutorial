@@ -124,3 +124,18 @@ Los inputs nos permiten pasar valores desde el componente «padre» que utiliza 
 8) agregamos un boton con el cual vamos a activar el "Event Emitter" utilizando el evento onclic.
 9) escribimso el metodo que sera activado por el boton al hacer click, y por medio del "Event Emitter" pasamos el parametro (mensaje).
 10) en el app selector del componente hijo el cual llamamos desde el componente padre agregamos (nombreEvent Emitter declarado)="mensaje=$event" el cual nos permite pasar los datos del componente padre al hijo.
+
+## Pipes
+Las pipes son filtros o funciones que pones directamente en la vista para el dar formato a un dato que estés pintando.
+
+Por ejemplo, imagina que quieres pintar una fecha, ‘Fri Apr 15 1988 00:00:00 GMT-0700’. Si quieres pintarla en formato MM/DD/YYYY, con lo que sabes hasta ahora, vas a tener que crear una función en el componente que se ejecuta cuando se pinte la vista. Pues con las pipes vas a poder crear funciones que hacen esto automáticamente y que puedes reutilizar a lo largo de tu aplicación.
+
+1) lowercase
+2) uppercase
+3) titlecase
+4) slice
+5) json
+6) number
+7) percent
+8) currency
+9) date

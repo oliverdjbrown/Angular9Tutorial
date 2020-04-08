@@ -22,6 +22,7 @@ import { NgswitchDirectiveComponent } from './ngswitch-directive/ngswitch-direct
 import { NgforDirectiveComponent } from './ngfor-directive/ngfor-directive.component';
 import { ComponentInteractionComponent } from './component-interaction/component-interaction.component';
 import { ChildComponentComponent } from './component-interaction/child-component/child-component.component';
+import { PipesComponent } from './pipes/pipes.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { ChildComponentComponent } from './component-interaction/child-component
     NgswitchDirectiveComponent,
     NgforDirectiveComponent,
     ComponentInteractionComponent,
-    ChildComponentComponent
+    ChildComponentComponent,
+    PipesComponent
   ],
   imports: [
     BrowserModule,

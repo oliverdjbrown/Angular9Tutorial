@@ -1,0 +1,36 @@
+Las pipes son filtros o funciones que pones directamente en la vista para el dar formato a un dato que estés pintando.
+
+Por ejemplo, imagina que quieres pintar una fecha, ‘Fri Apr 15 1988 00:00:00 GMT-0700’. Si quieres pintarla en formato MM/DD/YYYY, con lo que sabes hasta ahora, vas a tener que crear una función en el componente que se ejecuta cuando se pinte la vista. Pues con las pipes vas a poder crear funciones que hacen esto automáticamente y que puedes reutilizar a lo largo de tu aplicación.
+
+1) lowercase
+2) uppercase
+3) titlecase
+4) slice
+5) json
+6) number
+7) percent
+8) currency
+9) date
+
+<h1>Pipes</h1>
+
+<h2>{{pipes1 | lowercase}}</h2>
+<h2>{{pipes2 | uppercase}}</h2>
+<h2>{{pipes3 | titlecase}}</h2>
+<h2>{{pipes4 | slice:1}}</h2>
+<h2>{{pipes4 | slice:1:4}}</h2>
+<h2>{{pipes5 | json}}</h2>
+<h2>{{5.678 | number:'1.2-3'}}</h2>
+<h2>{{5.678 | number:'3.4-5'}}</h2>
+<h2>{{5.678 | number:'3.1-2'}}</h2>
+<h2>{{0.25 | percent}}</h2>
+<h2>{{0.25 | currency}}</h2>
+<h2>{{0.25 | currency: 'EUR'}}</h2>
+<h2>{{0.25 | currency: 'EUR': 'code'}}</h2>
+<h2>{{date}}</h2>
+<h2>{{date | date:'short'}}</h2>
+<h2>{{date | date:'shortDate'}}</h2>
+<h2>{{date | date:'shortTime'}}</h2>
+<h2>{{date | date:'medium'}}</h2>
+<h2>{{date | date:'long'}}</h2>
+<h2>{{date | date:'dd-MM-yyyy'}}</h2>

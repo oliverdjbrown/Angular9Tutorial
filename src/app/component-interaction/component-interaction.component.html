@@ -1,2 +1,18 @@
+Comunicacion (informacion) entre componentes padre e hijo por medio de decoradores 
+Los inputs nos permiten pasar valores desde el componente «padre» que utiliza dentro del el otro componente y así intercambiar datos entre estos dos componentes.
+
+1) en el TS de mi componente padre declaro mi variable "nombre".
+2) en el HTML de mi componente padre uso el selector de mi componente hijo pasandole un parametro para llamar mi formulario.
+3) en el TS de mi componente hijo declaro la variable "parentData" que recibira la variable que le paso por parametro, especificando el decorador @input() antes que mi variable asi le digo a angular que es valor a recibir de mi componente.
+4) importo input import Component, OnInit, Input  from '@angular/core';.
+
+5) para pasar datos del componente hijo al padre como no se tiene el selector del padre declaramos un evento que sera "EvenEmitter".
+6) agrego el decorador @output delante de mi declaracion.
+7) importo output y EventEmitter import  Component, OnInit, Input, Output, EventEmitter  from '@angular/core';.
+8) agregamos un boton con el cual vamos a activar el "Event Emitter" utilizando el evento onclic.
+9) escribimso el metodo que sera activado por el boton al hacer click, y por medio del "Event Emitter" pasamos el parametro (mensaje).
+10) en el app selector del componente hijo el cual llamamos desde el componente padre agregamos (nombreEvent Emitter declarado)="mensaje=$event" el cual nos permite pasar los datos del componente padre al hijo.
+
+
 <h1>{{mensaje}}</h1>
 <app-child-component (eventoHijo)="mensaje=$event" [parentData]="nombre"></app-child-component>

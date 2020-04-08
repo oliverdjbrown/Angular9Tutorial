@@ -1,3 +1,4 @@
+import { PipesComponent } from './pipes/pipes.component';
 import { ChildComponentComponent } from './component-interaction/child-component/child-component.component';
 import { ComponentInteractionComponent } from './component-interaction/component-interaction.component';
 import { NgforDirectiveComponent } from './ngfor-directive/ngfor-directive.component';
@@ -30,7 +31,8 @@ const routes: Routes = [
   { path: 'ngswitch-directive', component: NgswitchDirectiveComponent },
   { path: 'ngfor-directive', component: NgforDirectiveComponent },
   { path: 'component-interaction', component: ComponentInteractionComponent },
-  { path: 'child-component', component: ChildComponentComponent}
+  { path: 'child-component', component: ChildComponentComponent},
+  { path: 'pipes', component: PipesComponent}
 ];
 
 @NgModule({
