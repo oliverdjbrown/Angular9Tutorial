@@ -141,6 +141,15 @@ Por ejemplo, imagina que quieres pintar una fecha, ‘Fri Apr 15 1988 00:00:00 G
 9) date
 
 ## Services
-
 Un Servicio en Angular es una clase con una funcion especifica, es el mecanismo para compartir funcionalidad entre componentes, usar un servicio es una buena practica y es la recomendación debido a su mantenibilidad.
 
+1) se pueden usar para manejar informacion.
+2) se pueden usar para crear metodos que sea accedidos de nuestros componentes.
+
+## Dependency Injection
+Inyección de Dependencias (Dependency Injection o DI) es un patrón de diseño en el que una clase requiere instancias de una o más clases y en vez de generarlas dentro de su propio constructor, las recibe ya instanciadas por un mecanismo externo.
+En Angular esto significa que podemos requerir servicios u objetos que alguna de nuestras clases necesita, ya sean componentes, directivas o servicios, sin la necesidad de instanciar dichas dependencias nosotros mismos.
+
+1) Definimos nuestro clase (servicio).
+2) registrarmos nuestro injector.
+3) lo declaramos como una dependencia en una lista de nuestro componente por ejemplo.

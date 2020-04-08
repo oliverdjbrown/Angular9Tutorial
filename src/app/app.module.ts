@@ -24,6 +24,7 @@ import { ComponentInteractionComponent } from './component-interaction/component
 import { ChildComponentComponent } from './component-interaction/child-component/child-component.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { ServicesComponent } from './services/services.component';
+import { DependencyInjectionComponent } from './dependency-injection/dependency-injection.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { ServicesComponent } from './services/services.component';
     ComponentInteractionComponent,
     ChildComponentComponent,
     PipesComponent,
-    ServicesComponent
+    ServicesComponent,
+    DependencyInjectionComponent
   ],
   imports: [
     BrowserModule,

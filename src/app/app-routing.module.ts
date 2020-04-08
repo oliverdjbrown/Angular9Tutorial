@@ -1,3 +1,4 @@
+import { DependencyInjectionComponent } from './dependency-injection/dependency-injection.component';
 import { ServicesComponent } from './services/services.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { ChildComponentComponent } from './component-interaction/child-component/child-component.component';
@@ -34,7 +35,8 @@ const routes: Routes = [
   { path: 'component-interaction', component: ComponentInteractionComponent },
   { path: 'child-component', component: ChildComponentComponent},
   { path: 'pipes', component: PipesComponent},
-  { path: 'services', component: ServicesComponent}
+  { path: 'services', component: ServicesComponent},
+  { path: 'dependency-injection', component: DependencyInjectionComponent}
 ];
 
 @NgModule({
