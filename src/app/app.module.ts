@@ -25,6 +25,7 @@ import { ChildComponentComponent } from './component-interaction/child-component
 import { PipesComponent } from './pipes/pipes.component';
 import { ServicesComponent } from './services/services.component';
 import { DependencyInjectionComponent } from './dependency-injection/dependency-injection.component';
+import { EmpleadosService } from './services/empleados.service';
 
 @NgModule({
   declarations: [
@@ -56,7 +57,7 @@ import { DependencyInjectionComponent } from './dependency-injection/dependency-
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [EmpleadosService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

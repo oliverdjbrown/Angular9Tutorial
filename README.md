@@ -143,8 +143,19 @@ Por ejemplo, imagina que quieres pintar una fecha, ‘Fri Apr 15 1988 00:00:00 G
 ## Services
 Un Servicio en Angular es una clase con una funcion especifica, es el mecanismo para compartir funcionalidad entre componentes, usar un servicio es una buena practica y es la recomendación debido a su mantenibilidad.
 
-1) se pueden usar para manejar informacion.
-2) se pueden usar para crear metodos que sea accedidos de nuestros componentes.
+se pueden usar para manejar informacion.
+tambien se pueden usar para crear metodos que sea accedidos de nuestros componentes.
+
+1) primero creamos el servicio.
+2) luego creamos nuestros metodos que pueden tener el objeto con los datos.
+3) creamos un array vacio en el componente que recibira los datos.
+Nota: solo queda registrar nuetro injector para que asi podamos usar nuestro servicio hay que tener pendiente que dependiendo de donde se injecte lo usaran los componentes hijos por ende si queremos usarlo en toda la aplicacion el mejor lugar jerarquicamente hablando es el "appModule".
+4) agregamos nuestro servicio en el array "providers" colocando el nombre del servicio.
+5) importamos nuestro servicio en la cabezera del documento TS.
+6) dentro del constructor del componente donde usaremos nuestro servicio escribimos  una variable de la siguiente forma: (private nombreServicio: NombreServicio) que instanciara nuestro servicio.
+7) Importamos nuestro servicio en la cabezera del cocumento TS.
+8) podemos utilizar nuestro metodo ngOnInit para optener la informacion desde que inicie el componente y quedararia de la siguiente forma this.nuestraVariable = this.nuestroServicio.nuestroMetodoDelServicio();.
+9) en nuestra vista podemos interpolar nuestro objeto utilizando la directiva *ngFor.
 
 ## Dependency Injection
 Inyección de Dependencias (Dependency Injection o DI) es un patrón de diseño en el que una clase requiere instancias de una o más clases y en vez de generarlas dentro de su propio constructor, las recibe ya instanciadas por un mecanismo externo.
@@ -153,3 +164,5 @@ En Angular esto significa que podemos requerir servicios u objetos que alguna de
 1) Definimos nuestro clase (servicio).
 2) registrarmos nuestro injector.
 3) lo declaramos como una dependencia en una lista de nuestro componente por ejemplo.
+
+(esta practica la podemos ver en el componente servicio puesto es meramente informacion de estudio).
