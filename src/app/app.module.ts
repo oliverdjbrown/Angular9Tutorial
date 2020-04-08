@@ -23,6 +23,7 @@ import { NgforDirectiveComponent } from './ngfor-directive/ngfor-directive.compo
 import { ComponentInteractionComponent } from './component-interaction/component-interaction.component';
 import { ChildComponentComponent } from './component-interaction/child-component/child-component.component';
 import { PipesComponent } from './pipes/pipes.component';
+import { ServicesComponent } from './services/services.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { PipesComponent } from './pipes/pipes.component';
     NgforDirectiveComponent,
     ComponentInteractionComponent,
     ChildComponentComponent,
-    PipesComponent
+    PipesComponent,
+    ServicesComponent
   ],
   imports: [
     BrowserModule,

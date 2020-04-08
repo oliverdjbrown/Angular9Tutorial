@@ -139,3 +139,8 @@ Por ejemplo, imagina que quieres pintar una fecha, ‘Fri Apr 15 1988 00:00:00 G
 7) percent
 8) currency
 9) date
+
+## Services
+
+Un Servicio en Angular es una clase con una funcion especifica, es el mecanismo para compartir funcionalidad entre componentes, usar un servicio es una buena practica y es la recomendación debido a su mantenibilidad.
+
