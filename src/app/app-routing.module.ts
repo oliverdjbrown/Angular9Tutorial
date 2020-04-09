@@ -1,3 +1,6 @@
+import { AppComponent } from './app.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { RoutingNavigationComponent } from './routing-navigation/routing-navigation.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { HttpObservablesComponent } from './http-observables/http-observables.component';
 import { DependencyInjectionComponent } from './dependency-injection/dependency-injection.component';
@@ -22,6 +25,7 @@ import { InterpolationComponent } from './interpolation/interpolation.component'
 
 // Constante en donde se declaran las rutas para luego ser utilizadas
 const routes: Routes = [
+  { path: '', redirectTo: '', pathMatch: 'full' },
   { path: 'hello-world', component: HelloWorldComponent },
   { path: 'components', component: ComponentsComponent },
   { path: 'interpolation', component: InterpolationComponent },
@@ -40,7 +44,9 @@ const routes: Routes = [
   { path: 'services', component: ServicesComponent},
   { path: 'dependency-injection', component: DependencyInjectionComponent},
   { path: 'http-observables', component: HttpObservablesComponent },
-  { path: 'fetch-data', component: FetchDataComponent}
+  { path: 'fetch-data', component: FetchDataComponent},
+  { path: 'routing-navigation', component: RoutingNavigationComponent},
+  { path: '**', component: PageNotFoundComponent  }
 ];
 
 @NgModule({

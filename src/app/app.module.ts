@@ -29,6 +29,9 @@ import { DependencyInjectionComponent } from './dependency-injection/dependency-
 import { EmpleadosService } from './services/empleados.service';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { HttpObservablesComponent } from './http-observables/http-observables.component';
+import { RoutingNavigationComponent } from './routing-navigation/routing-navigation.component';
+import { DetailPageComponent } from './routing-navigation/detail/detail-page/detail-page.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +58,10 @@ import { HttpObservablesComponent } from './http-observables/http-observables.co
     ServicesComponent,
     DependencyInjectionComponent,
     FetchDataComponent,
-    HttpObservablesComponent
+    HttpObservablesComponent,
+    RoutingNavigationComponent,
+    DetailPageComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

@@ -205,4 +205,10 @@ Usando HttpClient de Angular junto con `catchError` de RxJS, podemos escribir f�
 ## Routing and Navigation
 El enrutador angular le permite mostrar diferentes componentes y datos al usuario según la ubicación del usuario en la aplicación. El enrutador permite la navegación de una vista a la siguiente a medida que los usuarios realizan tareas como las siguientes: Ingresar una URL en la barra de direcciones para navegar a la página correspondiente. Al hacer clic en los enlaces de la página para navegar a una nueva página. Al hacer clic en los botones Atrás y Adelante del navegador para navegar hacia atrás y adelante a través del historial del navegador.
 
-## 
+## Wildcard Route and Redirecting Routes
+En cualquier aplicación angular, utilizamos enrutamiento para navegar de una vista a otra. ¿Qué sucede si no definimos una ruta determinada e intentamos navegar a esa ruta? Bueno, la aplicación Angular arroja un error. Entonces, tenemos que definir cuidadosamente el enrutador para la navegación. Podemos usar el enrutamiento comodín para definir la ruta. Con la ayuda de comodines, podemos realizar ciertas operaciones relacionadas con la definición de la ruta para una aplicación.
+
+1) para esto simplemente creamos un componente que va a cumplir con la funcion de ser la vista por defecto en caso de no encontrarse la ruta.
+2) luego agregamos en el ultimo lugar del "app-rounting-module.ts" la siguiente ruta { path: '**', component: NombreComponente  } 
+3) para establecer nuestra ruta por defecto agregamos al principio de nuestas rutas { path: '', redirectTo: '', pathMatch: 'full' };
+
