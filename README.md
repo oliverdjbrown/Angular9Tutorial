@@ -198,3 +198,8 @@ getEmpleados(): Observable<NombreInterfaz[]> {
 11) dentro del metodo de inicio "ngOnInit" escribiremos this.nombreServicio.Metodo().subscribe(datos => this.variable = datos);
 12) en nuestra vista usaremos un elemento div y dentro usaremos la directiva *ngFor para desplegar los datos de nuestro arreglo
 
+## HTTP Error Handling
+
+Usando HttpClient de Angular junto con `catchError` de RxJS, podemos escribir fácilmente una función para manejar errores dentro de cada servicio. HttpClient también analizará convenientemente las respuestas JSON y devolverá un objeto javascript en el observable. Hay dos categorías de errores que deben manejarse de manera diferente
+
+## 

@@ -10,12 +10,13 @@ import { Component, OnInit } from '@angular/core';
 export class FetchDataComponent implements OnInit {
 
   public empleados = [];
+  public errorMsg;
 
   constructor(private empleadosSerice: EmpleadosService) { }
 
   ngOnInit(): void {
     this.empleadosSerice.getEmpleados()
-    .subscribe(datos => this.empleados = datos);
+    .subscribe(datos => this.empleados = datos, error => this.errorMsg = error);
   }
 
 }
