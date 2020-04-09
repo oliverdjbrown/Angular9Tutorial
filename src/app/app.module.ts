@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -26,6 +27,8 @@ import { PipesComponent } from './pipes/pipes.component';
 import { ServicesComponent } from './services/services.component';
 import { DependencyInjectionComponent } from './dependency-injection/dependency-injection.component';
 import { EmpleadosService } from './services/empleados.service';
+import { FetchDataComponent } from './fetch-data/fetch-data.component';
+import { HttpObservablesComponent } from './http-observables/http-observables.component';
 
 @NgModule({
   declarations: [
@@ -50,12 +53,15 @@ import { EmpleadosService } from './services/empleados.service';
     ChildComponentComponent,
     PipesComponent,
     ServicesComponent,
-    DependencyInjectionComponent
+    DependencyInjectionComponent,
+    FetchDataComponent,
+    HttpObservablesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [EmpleadosService],
   bootstrap: [AppComponent]

@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class EmpleadosService {
 
-  getEmpleados(){
+  getEmpleados() {
     return[
       {"id": 1, "nombre": "Oliver Brown", "edad": 30},
       {"id": 2, "nombre": "Martin Adam", "edad": 21},

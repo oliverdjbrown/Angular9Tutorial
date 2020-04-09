@@ -178,4 +178,23 @@ RxJS es una implementación para JavaScript de las Reactive Extensions. Estas fu
 3) suscribimos nuestros componentes a nuestro observble.
 asignamos nuestro array a una variable local en nuestro componente para luego mostrarlo en la vista.
 
-## 
+## Fetch Data Using HTTP
+
+1) primero abrimos el archivo app.module.ts e importamos "HttpClientModule" en la cabecera.
+2) Agregamos al imports array "HttpClientModule".
+3) en el constructor de nuestro servicio vamos a injectar nuestra dependencia (private http: HttpClient)
+4) importamos "HttpClient" en la cabecera de nuestro servicio.
+5) creamos un metodo en nuestro servicio que hara la peticion de los datos en nuestro servidor.
+6) crearemos una interfaz la cual se llamara empleados.ts y especificaremos el tipo de dato de nuestras variables que se llamaran como las variables de nuestro servicio "empleado.service.ts asi podremos hacer cast de los datos.
+7) para poder hacer el cast de los datos en el metodo de nuestro servicio usaremos 
+
+getEmpleados(): Observable<NombreInterfaz[]> {
+    return this.http.get<NombreInterfaz[]>(this.stringDatos);
+  }
+
+8) importamos "Observable" en la cabecera de nuestro servicio.
+9) declaramos en nuestro componente .TS una variable del tipo arreglo.
+10) en el constructor escribimos  (private nombreServicio: NombreServicio)
+11) dentro del metodo de inicio "ngOnInit" escribiremos this.nombreServicio.Metodo().subscribe(datos => this.variable = datos);
+12) en nuestra vista usaremos un elemento div y dentro usaremos la directiva *ngFor para desplegar los datos de nuestro arreglo
+

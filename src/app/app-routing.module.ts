@@ -1,3 +1,5 @@
+import { FetchDataComponent } from './fetch-data/fetch-data.component';
+import { HttpObservablesComponent } from './http-observables/http-observables.component';
 import { DependencyInjectionComponent } from './dependency-injection/dependency-injection.component';
 import { ServicesComponent } from './services/services.component';
 import { PipesComponent } from './pipes/pipes.component';
@@ -36,7 +38,9 @@ const routes: Routes = [
   { path: 'child-component', component: ChildComponentComponent},
   { path: 'pipes', component: PipesComponent},
   { path: 'services', component: ServicesComponent},
-  { path: 'dependency-injection', component: DependencyInjectionComponent}
+  { path: 'dependency-injection', component: DependencyInjectionComponent},
+  { path: 'http-observables', component: HttpObservablesComponent },
+  { path: 'fetch-data', component: FetchDataComponent}
 ];
 
 @NgModule({
