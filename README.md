@@ -202,4 +202,7 @@ getEmpleados(): Observable<NombreInterfaz[]> {
 
 Usando HttpClient de Angular junto con `catchError` de RxJS, podemos escribir fácilmente una función para manejar errores dentro de cada servicio. HttpClient también analizará convenientemente las respuestas JSON y devolverá un objeto javascript en el observable. Hay dos categorías de errores que deben manejarse de manera diferente
 
+## Routing and Navigation
+El enrutador angular le permite mostrar diferentes componentes y datos al usuario según la ubicación del usuario en la aplicación. El enrutador permite la navegación de una vista a la siguiente a medida que los usuarios realizan tareas como las siguientes: Ingresar una URL en la barra de direcciones para navegar a la página correspondiente. Al hacer clic en los enlaces de la página para navegar a una nueva página. Al hacer clic en los botones Atrás y Adelante del navegador para navegar hacia atrás y adelante a través del historial del navegador.
+
 ## 
