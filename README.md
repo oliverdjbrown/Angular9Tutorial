@@ -166,3 +166,16 @@ En Angular esto significa que podemos requerir servicios u objetos que alguna de
 3) lo declaramos como una dependencia en una lista de nuestro componente por ejemplo.
 
 (esta practica la podemos ver en el componente servicio puesto es meramente informacion de estudio).
+
+## HTTP and Observables, RxJS
+Los observables brindan soporte para pasar mensajes entre partes de su aplicación. Se usan con frecuencia en Angular y son la técnica recomendada para el manejo de eventos, la programación asincrónica y el manejo de múltiples valores.
+
+RxJS es una implementación para JavaScript de las Reactive Extensions. Estas fueron desarrolladas por Erik Meijer en Microsoft en el 2009. Básicamente son una librería para trabajar con streams mediante el uso de observables.
+
+
+1) Con HTTP podemos hacer la peticion de la informacion.
+2) recibimos el Observable y lo mapeamos en nuestro array.
+3) suscribimos nuestros componentes a nuestro observble.
+asignamos nuestro array a una variable local en nuestro componente para luego mostrarlo en la vista.
+
+## 
