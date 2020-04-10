@@ -22,6 +22,7 @@ import { HelloWorldComponent } from './hello-world/hello-world.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { InterpolationComponent } from './interpolation/interpolation.component';
+import { DetailPageComponent } from './routing-navigation/detail/detail-page/detail-page.component';
 
 // Constante en donde se declaran las rutas para luego ser utilizadas
 const routes: Routes = [
@@ -46,6 +47,7 @@ const routes: Routes = [
   { path: 'http-observables', component: HttpObservablesComponent },
   { path: 'fetch-data', component: FetchDataComponent},
   { path: 'routing-navigation', component: RoutingNavigationComponent},
+  { path: 'detail-page/:id', component: DetailPageComponent},
   { path: '**', component: PageNotFoundComponent  }
 ];
 

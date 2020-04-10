@@ -212,3 +212,11 @@ En cualquier aplicación angular, utilizamos enrutamiento para navegar de una vi
 2) luego agregamos en el ultimo lugar del "app-rounting-module.ts" la siguiente ruta { path: '**', component: NombreComponente  } 
 3) para establecer nuestra ruta por defecto agregamos al principio de nuestas rutas { path: '', redirectTo: '', pathMatch: 'full' };
 
+## Route Parameters
+Los parámetros de ruta corresponden a las variables de ruta que usted define en la ruta. La URL que coincide con la ruta proporciona el productId. Angular usa el productId para mostrar los detalles de cada producto único.
+
+1) dentro de app-routing.module.ts crearemos nuestra ruta con un parametro.
+2) para pasar el parametro al navegar, primero injectamos en el constructor (private router: Router), importamos el servicio luego creamos un metodo en nuestro componente TS que se activara al hacer clic sobre el elemento (ruta) al cual vamos a navegar pasando asi el id.
+3) para leer el id (parametro) desde el componente al cual vamos a navegar primero escribimos dentro del constructor (private route: ActivatedRoute) e importamos el servicio, luego dentro del metodo onInit escribimos variableID = parseInt(this.route.snapshot.paramMap.get('id'));.
+4) luego mostramos la viariable en la vista utilizando la interpolacion.
+
