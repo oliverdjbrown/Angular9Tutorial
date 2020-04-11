@@ -248,4 +248,8 @@ Esto proporciona que podamos usar parametros en la ruta.
 5) en el metodo ngOnInit escribiremos un codigo que capturara el id de nuestra ruta.
 6) en la vista de nuestro componente padre por medio de classbinding validaremos si dentro de nuestra lista uno de los elementos concuerda con el id capturado para luego aplicar un css y resaltarlo.
 
+## Relative Navigation
+navegación relativa en la aplicación angular. Mientras construimos la aplicación con el uso de la ruta absoluta, fijamos el mismo enlace en todas partes donde la necesitamos en esa ruta. Entonces, cuando cambiamos la ruta principal, entonces tenemos que cambiar la ruta para reflejar los enlaces utilizados también afuera. Entonces, mediante el uso de una ruta relativa, está liberando sus enlaces que son relativos al segmento URL actual. Su área de enrutamiento característica será la misma incluso si cambia la ruta para el padre. Simplemente está liberando su enlace incluso si cambia la ruta de ruta principal.
 
+1) para hacer uso de la ruta relativa en el componente TS hijo dentro del metodo regresar utilizaremos
+el codigo.

@@ -28,6 +28,7 @@ public selectedId;
 
   onSelect(framework) {
     this.router.navigate(['/detail-page', framework.id]);
+    // this.router.navigate([framework.id], {relativeTo: this.route});
   }
 
   isSelected(framework) {
