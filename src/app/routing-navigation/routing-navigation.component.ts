@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 
 @Component({
   selector: 'app-routing-navigation',
@@ -7,6 +7,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./routing-navigation.component.css']
 })
 export class RoutingNavigationComponent implements OnInit {
+
+public selectedId;
 
   frameworks = [
     {"id": 1, "nombre": "Angular"},
@@ -16,13 +18,20 @@ export class RoutingNavigationComponent implements OnInit {
     {"id": 5, "nombre": "Bootstrap"}
   ];
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.route.paramMap.subscribe((params: ParamMap) => {
+      this.selectedId = parseInt(params.get('id'));
+    });
   }
 
   onSelect(framework) {
     this.router.navigate(['/detail-page', framework.id]);
+  }
+
+  isSelected(framework) {
+    return framework.id === this.selectedId;
   }
 
 }

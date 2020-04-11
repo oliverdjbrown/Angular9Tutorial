@@ -1,5 +1,23 @@
+Un mapa que proporciona acceso a los parámetros obligatorios y opcionales específicos de una ruta. El mapa admite la recuperación de un único valor con get () o múltiples valores con getAll ()
+
+1) primero vamos a crear dos etiquetas de ancla las cuales les asignaremos un evento clic para hacer atras y siguiente. 
+2) importamos Router en la cabecera de nuestro componente.
+3) en nuestro constructor escribimos private router: Router.
+4) declaramos una variable que va a fungir como ID
+5) en el primero de nuestros metodos vamos a escribir dentro
+
+this.variableId = this.variableId - 1;
+this.router.navigate(['/componente-detalle', this.variableId]);
+
+6) en caso de que la vista no se actualice al desplazarnos entr los ID procedemos a la otra implementacion.
+
+
 <h3>El id del framwork seleccionado es: {{frameworkId}} </h3>
 
 <a (click)="anterior()">Anterior</a>
 
 <a (click)="siguiente()">Siguiente</a>
+
+<div>
+    <button (click)="regresar()">Regresar</button>
+</div>

@@ -238,3 +238,14 @@ this.route.paramMap.subscribe((params: ParamMap) => {
       this.frameworkId = parseInt(params.get('id'));
     });
 
+## Optional Route Parameters
+Esto proporciona que podamos usar parametros en la ruta.
+
+1) en la visa del componente hijo crearemos un boton con el evento regresar para asi regresar al evento padre.
+2) en el archivo Ts del componente hijo crearemos un metodo el cual captura el ID actual para luego regresarlo como parametro opcional al componente padre.
+3) En el formulario padre injectaremos en el constructor private route: ActivatedRoute.
+4) Importamos las propiedades ActivatedRoute y ParamMap.
+5) en el metodo ngOnInit escribiremos un codigo que capturara el id de nuestra ruta.
+6) en la vista de nuestro componente padre por medio de classbinding validaremos si dentro de nuestra lista uno de los elementos concuerda con el id capturado para luego aplicar un css y resaltarlo.
+
+

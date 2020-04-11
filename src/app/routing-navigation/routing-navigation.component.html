@@ -16,13 +16,22 @@ Los parámetros de ruta corresponden a las variables de ruta que usted define en
 3) para leer el id (parametro) desde el componente al cual vamos a navegar primero escribimos dentro del constructor (private route: ActivatedRoute) e importamos el servicio, luego dentro del metodo onInit escribimos variableID = parseInt(this.route.snapshot.paramMap.get('id'));.
 4) luego mostramos la viariable en la vista utilizando la interpolacion.
 
+<h1>Optional rout Parameters</h1>
+Esto proporciona que podamos usar parametros en la ruta.
+
+1) en la visa del componente hijo crearemos un boton con el evento regresar para asi regresar al evento padre.
+2) en el archivo Ts del componente hijo crearemos un metodo el cual captura el ID actual para luego regresarlo como parametro opcional al componente padre.
+3) En el formulario padre injectaremos en el constructor private route: ActivatedRoute.
+4) Importamos las propiedades ActivatedRoute y ParamMap.
+5) en el metodo ngOnInit escribiremos un codigo que capturara el id de nuestra ruta.
+6) en la vista de nuestro componente padre por medio de classbinding validaremos si dentro de nuestra lista uno de los elementos concuerda con el id capturado para luego aplicar un css y resaltarlo.
 
 <h3>
     Listado de Framworks
 </h3>
 
 <ul class="items">
-    <li (click)="onSelect(framework)" *ngFor="let framework of frameworks">
+    <li (click)="onSelect(framework)" [class.selected]="isSelected(framework)" *ngFor="let framework of frameworks">
         <span class="badge">{{framework.id}}</span> {{framework.nombre}}
     </li>
 </ul>

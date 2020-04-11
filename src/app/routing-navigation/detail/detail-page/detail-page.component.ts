@@ -31,4 +31,9 @@ public frameworkId;
     this.router.navigate(['/detail-page', this.frameworkId]);
   }
 
+  regresar() {
+    let selectedId = this.frameworkId ? this.frameworkId : null;
+    this.router.navigate(['/routing-navigation', {id: selectedId}]);
+  }
+
 }
