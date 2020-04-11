@@ -32,6 +32,13 @@ navegación relativa en la aplicación angular. Mientras construimos la aplicaci
 1) para hacer uso de la ruta relativa en el componente TS hijo dentro del metodo regresar utilizaremos
 el codigo.
 
+<h1>Child Routes</h1>
+Es fácil crear cualquier tipo de jerarquía de enrutamiento en sus aplicaciones angulares utilizando rutas secundarias en las configuraciones de su enrutador.
+
+1) primero creamos los componentes que van a fungir como hijos.
+2) luego en el archivo app-routing-module.ts definimos el arreglo de rutas dentro de la ruta padre.
+3) por ultimo agregamos un boton en la vista del componente padre la cual tendra el evento click y llamara el metodo que navegara a los componentes hijos.
+4) debajo de estos componentes colocamos las etiquetas router-outlet para que se muestren los componentes.
 
 <h3>
     Listado de Framworks
@@ -42,5 +49,6 @@ el codigo.
         <span class="badge">{{framework.id}}</span> {{framework.nombre}}
     </li>
 </ul>
+
 
 

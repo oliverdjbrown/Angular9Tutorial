@@ -14,9 +14,16 @@ this.router.navigate(['/componente-detalle', this.variableId]);
 
 <h3>El id del framwork seleccionado es: {{frameworkId}} </h3>
 
-<a (click)="anterior()">Anterior</a>
+<p>
+    <button (click)="ShowOverView()">Overview</button>
+    <button (click)="ShowContact()">Contact</button>
+</p>
+<router-outlet></router-outlet>
 
-<a (click)="siguiente()">Siguiente</a>
+<p>
+<button (click)="anterior()">Anterior</button>
+<button (click)="siguiente()">Siguiente</button>
+</p>
 
 <div>
     <button (click)="regresar()">Regresar</button>

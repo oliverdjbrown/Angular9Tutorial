@@ -1,3 +1,5 @@
+import { ChildContactoComponent } from './routing-navigation/child/child-contacto/child-contacto.component';
+import { ChildOverviewComponent } from './routing-navigation/child/child-overview/child-overview.component';
 import { AppComponent } from './app.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { RoutingNavigationComponent } from './routing-navigation/routing-navigation.component';
@@ -47,7 +49,13 @@ const routes: Routes = [
   { path: 'http-observables', component: HttpObservablesComponent },
   { path: 'fetch-data', component: FetchDataComponent},
   { path: 'routing-navigation', component: RoutingNavigationComponent},
-  { path: 'detail-page/:id', component: DetailPageComponent},
+  { path: 'detail-page/:id',
+   component: DetailPageComponent,
+   children: [
+     { path: 'overview', component: ChildOverviewComponent},
+     { path: 'contacto', component: ChildContactoComponent}
+   ]
+  },
   { path: '**', component: PageNotFoundComponent  }
 ];
 

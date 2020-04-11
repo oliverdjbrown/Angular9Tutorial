@@ -37,4 +37,12 @@ public frameworkId;
     this.router.navigate(['../', { id: selectedId }], { relativeTo: this.route });
   }
 
+  ShowOverView() {
+    this.router.navigate(['overview'], {relativeTo: this.route});
+  }
+
+  ShowContact() {
+    this.router.navigate(['contacto'], {relativeTo: this.route});
+  }
+
 }

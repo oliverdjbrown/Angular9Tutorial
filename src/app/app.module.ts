@@ -32,6 +32,8 @@ import { HttpObservablesComponent } from './http-observables/http-observables.co
 import { RoutingNavigationComponent } from './routing-navigation/routing-navigation.component';
 import { DetailPageComponent } from './routing-navigation/detail/detail-page/detail-page.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ChildOverviewComponent } from './routing-navigation/child/child-overview/child-overview.component';
+import { ChildContactoComponent } from './routing-navigation/child/child-contacto/child-contacto.component';
 
 @NgModule({
   declarations: [
@@ -61,7 +63,9 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     HttpObservablesComponent,
     RoutingNavigationComponent,
     DetailPageComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    ChildOverviewComponent,
+    ChildContactoComponent
   ],
   imports: [
     BrowserModule,
