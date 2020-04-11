@@ -220,3 +220,21 @@ Los parámetros de ruta corresponden a las variables de ruta que usted define en
 3) para leer el id (parametro) desde el componente al cual vamos a navegar primero escribimos dentro del constructor (private route: ActivatedRoute) e importamos el servicio, luego dentro del metodo onInit escribimos variableID = parseInt(this.route.snapshot.paramMap.get('id'));.
 4) luego mostramos la viariable en la vista utilizando la interpolacion.
 
+## paramMap Observable
+Un mapa que proporciona acceso a los parámetros obligatorios y opcionales específicos de una ruta. El mapa admite la recuperación de un único valor con get () o múltiples valores con getAll ()
+
+1) primero vamos a crear dos etiquetas de ancla las cuales les asignaremos un evento clic para hacer atras y siguiente. 
+2) importamos Router en la cabecera de nuestro componente.
+3) en nuestro constructor escribimos private router: Router.
+4) declaramos una variable que va a fungir como ID
+5) en el primero de nuestros metodos vamos a escribir dentro
+
+this.variableId = this.variableId - 1;
+this.router.navigate(['/componente-detalle', this.variableId]);
+
+6) en caso de que la vista no se actualice al desplazarnos entr los ID procedemos a la otra implementacion.
+
+this.route.paramMap.subscribe((params: ParamMap) => {
+      this.frameworkId = parseInt(params.get('id'));
+    });
+
